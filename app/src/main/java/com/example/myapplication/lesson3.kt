@@ -1,6 +1,6 @@
 fun main() {
     val name = "Sam"
-    var age = 20
+    var age = 202
     println("Name: $name")
     println("Age: $age")
 

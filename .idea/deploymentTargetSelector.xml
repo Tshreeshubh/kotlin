@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ProfileActivity (1)">
+      <SelectionState runConfigName="CardActivity (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ProfileActivity (2)">
+      <SelectionState runConfigName="card (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ProfileActivity (3)">
+      <SelectionState runConfigName="LoginActivity2">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ProfileActivity (4)">
+      <SelectionState runConfigName="LoginActivity2 (1)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ProfileActivity (5)">
+      <SelectionState runConfigName="LoginActivity2 (2)">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

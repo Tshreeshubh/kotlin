@@ -67,7 +67,7 @@ fun CardScreen(modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = R.drawable.dk), // Your profile image
+                painter = painterResource(id = R.drawable.ij), // Your profile image
                 contentDescription = "Profile",
                 modifier = Modifier
                     .size(36.dp)

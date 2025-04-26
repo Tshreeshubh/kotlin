@@ -1,11 +1,10 @@
-package com.example.softwareengine
+package com.example.myapplication.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -23,10 +22,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapplication.R
 
-
 data class CardItem(val title: String, val iconRes: Int)
 
-// List of card items
 val cardItems = listOf(
     CardItem("Text", R.drawable.baseline_text_fields_24),
     CardItem("Address", R.drawable.baseline_add_location_24),
@@ -43,7 +40,7 @@ class LoginActivity2 : ComponentActivity() {
         setContent {
             Surface(
                 modifier = Modifier.fillMaxSize(),
-                color = Color(0xFF1BD29A) // Background color
+                color = Color(0xFF1BD29A)
             ) {
                 CardScreen()
             }
@@ -58,7 +55,6 @@ fun CardScreen(modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Profile row
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -67,7 +63,7 @@ fun CardScreen(modifier: Modifier = Modifier) {
             verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
-                painter = painterResource(id = R.drawable.ij), // Your profile image
+                painter = painterResource(id = R.drawable.gay),
                 contentDescription = "Profile",
                 modifier = Modifier
                     .size(36.dp)
@@ -75,7 +71,6 @@ fun CardScreen(modifier: Modifier = Modifier) {
             )
         }
 
-        // Title texts
         Text(
             text = "Card",
             fontSize = 28.sp,
@@ -92,7 +87,6 @@ fun CardScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        // Card grid
         LazyColumn(
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -102,7 +96,7 @@ fun CardScreen(modifier: Modifier = Modifier) {
                     horizontalArrangement = Arrangement.spacedBy(12.dp),
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    for (item in rowItems) {
+                    rowItems.forEach { item ->
                         CardItemView(item, modifier = Modifier.weight(1f))
                     }
                     if (rowItems.size == 1) {
@@ -114,7 +108,6 @@ fun CardScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(1.dp))
 
-        // Settings card
         SettingsCard()
     }
 }
@@ -123,7 +116,7 @@ fun CardScreen(modifier: Modifier = Modifier) {
 fun CardItemView(item: CardItem, modifier: Modifier = Modifier) {
     Card(
         modifier = modifier.height(160.dp),
-        elevation = CardDefaults.cardElevation(8.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
     ) {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -149,7 +142,7 @@ fun SettingsCard() {
         modifier = Modifier
             .fillMaxWidth()
             .height(80.dp),
-        elevation = CardDefaults.cardElevation(8.dp)
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -159,10 +152,10 @@ fun SettingsCard() {
                 .padding(16.dp)
         ) {
             Icon(
-                painter = painterResource(id = R.drawable.baseline_settings_24), // <-- Your custom settings image
+                painter = painterResource(id = R.drawable.baseline_settings_24),
                 contentDescription = "Settings",
                 modifier = Modifier.size(32.dp),
-                tint = Color.Unspecified // <-- Show original icon color
+                tint = Color.Unspecified
             )
             Spacer(modifier = Modifier.width(16.dp))
             Text(text = "Settings", fontSize = 18.sp, fontWeight = FontWeight.Bold)

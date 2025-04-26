@@ -72,7 +72,7 @@
 //
 //        ){
 //            Image(
-//                painter = painterResource(R.drawable.dk),
+//                painter = painterResource(R.drawable.ij),
 //                contentDescription = null,
 //                contentScale = ContentScale.Crop,
 //                modifier = Modifier
@@ -133,7 +133,7 @@
 ////            .weight(),
 //
 //            verticalAlignment = Alignment.CenterVertically,
-//            horizontalArrangement = Arrangement.SpaceEvenly
+//            horizontalArrangement = Arrangement.SpaceAround
 //
 //
 //
@@ -143,7 +143,7 @@
 //
 //                modifier = Modifier
 //                    .padding(innerPadding)
-//                    .size(190.dp)
+//                    .size(160.dp)
 //                    .background(color = Color.White)
 //
 //
@@ -162,7 +162,7 @@
 //            ) {
 //                Image(
 ////                              modifier = ,
-//                    painter = painterResource(R.drawable.bhagwatgeeta),
+//                    painter = painterResource(R.drawable.ij),
 ////                tint = Color.Black,
 //                    contentDescription = null,
 //                    contentScale = ContentScale.Fit,
@@ -242,7 +242,7 @@
 //                modifier = Modifier
 //
 //                    .padding(innerPadding)
-//                    .size(190.dp)
+//                    .size(160.dp)
 //                    .background(color = Color.White)
 //
 //
@@ -251,7 +251,7 @@
 //                Image(
 //
 ////                              modifier = ,
-//                    painter = painterResource(R.drawable.bhagwatgeeta),
+//                    painter = painterResource(R.drawable.ij),
 ////                tint = Color.Black,
 //                    contentDescription = null,
 //                    contentScale = ContentScale.Fit,
@@ -311,13 +311,13 @@
 //
 //
 //     Row ( modifier = Modifier
-//        .fillMaxWidth()
+////        .fillMaxWidth()
 //
-//        .padding(horizontal = 10.dp, vertical = 400.dp, ),
+//        .padding(horizontal = 10.dp, vertical = 40.dp, ),
 ////            .weight(),
 //
 //        verticalAlignment = Alignment.CenterVertically,
-////        horizontalArrangement = Arrangement.SpaceEvenly
+//        horizontalArrangement = Arrangement.SpaceEvenly
 //
 //
 //
@@ -327,7 +327,7 @@
 //
 //            modifier = Modifier
 //                .padding(innerPadding)
-//                .size(190.dp)
+//                .size(160.dp)
 //                .background(color = Color.White)
 //
 //

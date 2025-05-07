@@ -4,4 +4,5 @@
     <string name="title_activity_card">card</string>
     <string name="title_activity_login2">LoginActivity2</string>
     <string name="title_activity_test">Test</string>
+    <string name="title_activity_loginactivity3">loginactivity3</string>
 </resources>

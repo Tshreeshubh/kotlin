@@ -72,7 +72,7 @@
 //
 //        ){
 //            Image(
-//                painter = painterResource(R.drawable.ij),
+//                painter = painterResource(R.drawable.gay),
 //                contentDescription = null,
 //                contentScale = ContentScale.Crop,
 //                modifier = Modifier
@@ -162,7 +162,7 @@
 //            ) {
 //                Image(
 ////                              modifier = ,
-//                    painter = painterResource(R.drawable.ij),
+//                    painter = painterResource(R.drawable.gay),
 ////                tint = Color.Black,
 //                    contentDescription = null,
 //                    contentScale = ContentScale.Fit,
@@ -251,7 +251,7 @@
 //                Image(
 //
 ////                              modifier = ,
-//                    painter = painterResource(R.drawable.ij),
+//                    painter = painterResource(R.drawable.gay),
 ////                tint = Color.Black,
 //                    contentDescription = null,
 //                    contentScale = ContentScale.Fit,
